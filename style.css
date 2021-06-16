@@ -33,15 +33,16 @@
 }
 .link-div > div > a {
   width: 85%;
-  overflow: scroll;
+  overflow: hidden;
   padding-right: 8px;
   z-index: 1;
 }
-.link-div > div > a>textarea {
+.link-div > div > a > textarea {
   width: 100%;
   overflow: scroll;
   padding-right: 8px;
   z-index: 1;
+  overflow: hidden;
 }
 
 .link-div > div > button {
@@ -178,7 +179,7 @@ tbody > tr {
   margin-top: 18px;
   float: right;
 }
-button.bCopy{
+button.bCopy {
   background: orange;
   border: 1px solid orange;
 }
@@ -201,7 +202,7 @@ button.copied {
   .link-div {
     font-size: 16px;
   }
-  .link-div > div > a >textarea {
+  .link-div > div > a > textarea {
     height: 44px;
     font-size: 18px;
   }
