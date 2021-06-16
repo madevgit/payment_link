@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  font-family: ubuntu, Roboto;
+}
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+}
+.link-div {
+  position: fixed;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+.link-div > div {
+  width: 80vw;
+  max-width: 500px;
+  padding: 16px;
+  margin: 50vh auto;
+  background: white;
+  height: 92px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 2px 12px 4px rgba(2, 2, 2, 0.123);
+  border-radius: 12px;
+}
+.link-div > div > a {
+  width: 90%;
+}
+.link-div > div > a > input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid orange;
+  padding: 2px;
+  border-radius: 4px;
+  color: rgb(4, 4, 134);
+  text-decoration: underline;
+  height: 32px;
+}
+.link-div > div > button {
+  height: 32px;
+  border: none;
+  background: orange;
+  border: 1px solid orange;
+  border-radius: 4px;
+  padding: 4px;
+  color: whitesmoke;
+  margin-left: -4px;
+}
+button.tab {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  height: 44 px;
+  margin: 0;
+}
+
+button.element {
+  border: 1px solid rgba(128, 128, 128, 0.123);
+  background: orange;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  margin: none;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  font-size: small;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  padding: 8px;
+  align-items: center;
+  position: fixed;
+  padding: 2em 8%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  background: transparent;
+  margin: auto;
+  border-radius: 12 px;
+  box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-collapse: collapse;
+  padding: 32px;
+  margin-top: 7em;
+}
+thead {
+  position: ;
+}
+thead > tr {
+  background-color: orange;
+  height: 4em;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 166, 0, 0.15);
+  border-bottom: 1px solid rgba(255, 166, 0, 0.15);
+  text-align: left;
+  color: white;
+}
+thead > tr > th {
+  padding-left: 1em;
+}
+tbody {
+  background: white;
+  font-size: 10px;
+}
+tbody > tr > td:first-child {
+  padding-left: 1em;
+}
+tbody > tr > td:last-child {
+  padding-right: 1em;
+}
+tbody > tr {
+  height: 80px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+  padding: 7px;
+}
+
+.wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.1);
+}
+.wrapper form {
+  padding: 24px;
+  background-color: white;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 12px;
+  margin: auto;
+}
+.wrapper form div {
+  margin-top: 16px;
+}
+.wrapper form label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.wrapper form input {
+  height: 44px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid rgb(236, 230, 230);
+}
+.wrapper form button {
+  font-size: 18;
+  background: orange;
+  border-radius: 12px;
+  padding: 12px;
+  border: none;
+  box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-weight: bold;
+  margin-top: 18px;
+  float: right;
+}
+@media (min-width: 768px) {
+  table {
+    width: 95%;
+  }
+  thead > tr {
+    font-size: 14px;
+  }
+
+  tbody {
+    font-size: 13px;
+  }
+  .link-div {
+    font-size: 16px;
+  }
+  .link-div > div > a > input {
+    height: 44px;
+    font-size: 18px;
+  }
+  .link-div > div > button {
+    height: 44px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  thead > tr {
+    font-size: 16px;
+  }
+  tbody {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  thead > tr {
+    font-size: 18px;
+  }
+  tbody {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
