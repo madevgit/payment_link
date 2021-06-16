@@ -32,25 +32,18 @@
   border-radius: 12px;
 }
 .link-div > div > a {
-  width: 90%;
+  width: 85%;
+  overflow: scroll;
+  padding-right: 8px;
+  z-index: 1;
 }
-.link-div > div > a > input {
-  width: 100%;
-  background-color: transparent;
-  border: 1px solid orange;
-  padding: 2px;
-  border-radius: 4px;
-  color: rgb(4, 4, 134);
-  text-decoration: underline;
-  height: 32px;
-}
+
 .link-div > div > button {
+  z-index: 2;
   height: 32px;
   border: none;
-  background: orange;
-  border: 1px solid orange;
   border-radius: 4px;
-  padding: 4px;
+  padding: 4px 12px;
   color: whitesmoke;
   margin-left: -4px;
 }
@@ -179,6 +172,15 @@ tbody > tr {
   margin-top: 18px;
   float: right;
 }
+button.bCopy{
+  background: orange;
+  border: 1px solid orange;
+}
+button.copied {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+}
+
 @media (min-width: 768px) {
   table {
     width: 95%;
