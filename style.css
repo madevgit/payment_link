@@ -16,7 +16,7 @@
   height: 100vh;
   left: 0;
   top: 0;
-  z-index: 99;
+  z-index: 10;
 }
 .link-div > div {
   width: 80vw;
@@ -91,7 +91,7 @@ header {
   top: 0;
   left: 0;
   box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.1);
-  z-index: 999;
+  z-index: 8;
 }
 
 table {
@@ -103,9 +103,6 @@ table {
   border-collapse: collapse;
   padding: 32px;
   margin-top: 7em;
-}
-thead {
-  position: ;
 }
 thead > tr {
   background-color: orange;
@@ -145,6 +142,7 @@ tbody > tr {
   display: none;
   align-items: center;
   box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 .wrapper form {
   padding: 24px;
