@@ -37,14 +37,7 @@
             </button>
             <div onclick="hide(event)" class="link-div" hidden>
               <div>
-                <a href="/"
-                  ><input
-                    hidden
-                    type="text"
-                    name="link"
-                    value="https://helloWorld.com"
-                  />https://helloWorldddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd.com</a
-                >
+                <a href="https://google.com" target="blank"><textarea disabled name="link"/>https://google.com</textarea></a>
                 <button onclick="copy(event)" class="bCopy">Copy</button>
               </div>
             </div>
@@ -70,39 +63,5 @@
       </form>
     </section>
     <script src="index.js"></script>
-    <script>
-      let previous;
-      function copy(event) {
-        event.stopPropagation();
-        let textCopied = event.target.previousElementSibling.firstElementChild;
-        textCopied.select();
-        textCopied.setSelectionRange(0, 99999);
-        document.execCommand("copy");
-        event.target.classList.add("copied");
-        event.target.innerHTML = "Done";
-        previous = event.target;
-      }
-      function show(event) {
-        event.stopPropagation();
-        let baseElement =
-          event.target.nodeName === "IMG"
-            ? event.target.parentElement
-            : event.target;
-        baseElement.nextElementSibling.hidden =
-          !baseElement.nextElementSibling.hidden;
-      }
-      function hide(event) {
-        event.stopPropagation();
-        event.target.classList.contains("link-div") &&
-          (event.target.hidden = !event.target.hidden);
-        event.target.classList.contains("wrapper") &&
-          (event.target.style = "display:none");
-        previous.classList.remove("copied");
-        previous.innerHTML = "copy";
-      }
-      function popover() {
-        document.querySelector(".wrapper").style = "display:grid";
-      }
-    </script>
   </body>
 </html>

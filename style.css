@@ -37,6 +37,12 @@
   padding-right: 8px;
   z-index: 1;
 }
+.link-div > div > a>textarea {
+  width: 100%;
+  overflow: scroll;
+  padding-right: 8px;
+  z-index: 1;
+}
 
 .link-div > div > button {
   z-index: 2;
@@ -45,7 +51,7 @@
   border-radius: 4px;
   padding: 4px 12px;
   color: whitesmoke;
-  margin-left: -4px;
+  margin-left: -8px;
 }
 button.tab {
   border: none;
@@ -195,7 +201,7 @@ button.copied {
   .link-div {
     font-size: 16px;
   }
-  .link-div > div > a > input {
+  .link-div > div > a >textarea {
     height: 44px;
     font-size: 18px;
   }
